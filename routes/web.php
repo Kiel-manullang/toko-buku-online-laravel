@@ -11,7 +11,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\AdminPesananController;
-use App\Http\Controllers\AdminUserController; // <-- BARIS INI DITAMBAHKAN
+use App\Http\Controllers\AdminUserController; 
 use App\Http\Middleware\AdminMiddleware;
 
 /*
@@ -87,8 +87,8 @@ Route::middleware(['auth', AdminMiddleware::class])->group(function () {
     });
 
     // Rute CRUD untuk Pengguna (AdminUserController)
-    Route::resource('admin/users', AdminUserController::class)->names([ // <-- BLOK INI DITAMBAHKAN
+    Route::resource('admin/users', AdminUserController::class)->names([
         'index' => 'admin.users.index',
         'show' => 'admin.users.show',
-    ])->except(['create', 'store', 'edit', 'update', 'destroy']); // Untuk saat ini, hanya izinkan INDEX & SHOW
+    ])->except(['create', 'store', 'edit', 'update', 'destroy']);
 });

@@ -12,7 +12,7 @@
 
 <style>
 html, body {
-    height:100%; 
+    height:100%;
 }
 body {
     display:flex;
@@ -20,7 +20,7 @@ body {
     font-family:'Inter',sans-serif;
     /* Animasi Gradien Elegan */
     background: linear-gradient(-45deg, #3b3f5c, #1f2937, #2d3748, #4a5568);
-    background-size: 400% 400%; 
+    background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color:#e5e7eb;
 }
@@ -288,7 +288,7 @@ tbody tr:last-child td:last-child {border-bottom-right-radius:1rem;}
         </div>
         <div class="border-t border-gray-700 pt-6 text-center">
             <p class="text-xs footer-bottom-text">© {{ date('Y') }} BookSphere. Hak Cipta Dilindungi.</p>
-            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh Gemini AI.</p>
+            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh kelompok 5.</p>
         </div>
     </div>
 </footer>
