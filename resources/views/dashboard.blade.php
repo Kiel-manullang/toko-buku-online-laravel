@@ -192,7 +192,7 @@ h1, h2 {
         </div>
         <div class="border-t border-gray-700 pt-4 text-center">
             <p class="text-xs footer-bottom-text">© {{ date('Y') }} BookSphere. Hak Cipta Dilindungi.</p>
-            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh Tim BookSphere</p>
+            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh kelompok 5</p>
         </div>
     </div>
 </footer>

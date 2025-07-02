@@ -9,7 +9,7 @@
         <style>
             body {
                 font-family: 'Inter', sans-serif;
-                background: linear-gradient(to right bottom, #87CEEB, #2C5282); /* Gradient biru muda ke biru tua */
+                background: linear-gradient(to right bottom, #87CEEB, #2C5282); 
                 min-height: 100vh;
                 display: flex;
                 align-items: center;

@@ -288,7 +288,7 @@ tbody tr:last-child td:last-child {border-bottom-right-radius:1rem;}
         </div>
         <div class="border-t border-gray-700 pt-6 text-center">
             <p class="text-xs footer-bottom-text">© {{ date('Y') }} BookSphere. Hak Cipta Dilindungi.</p>
-            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh Gemini AI.</p>
+            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan kelompok 5.</p>
         </div>
     </div>
 </footer>
