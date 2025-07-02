@@ -10,9 +10,7 @@
 
     class PesananController extends Controller
     {
-        /**
-         * Menampilkan riwayat pesanan pengguna yang sedang login.
-         */
+
         public function index()
         {
             // Pastikan user sudah login
@@ -20,16 +18,13 @@
                 return redirect()->route('login')->with('error', 'Silakan login untuk melihat riwayat pesanan Anda.');
             }
 
-            // Ambil semua pesanan milik user yang sedang login, diurutkan dari terbaru
-            // Eager load pesananItems dan buku yang terkait
+
             $pesanans = Auth::user()->pesanans()->with('pesananItems.buku')->latest()->paginate(10);
 
             return view('pesanan.index', compact('pesanans'));
         }
 
-        /**
-         * Menampilkan detail pesanan tertentu.
-         */
+
         public function show(Pesanan $pesanan)
         {
             // Pastikan pesanan milik user yang sedang login
@@ -37,25 +32,13 @@
                 return redirect()->route('pesanan.index')->with('error', 'Anda tidak memiliki izin untuk melihat pesanan ini.');
             }
 
-            // Eager load pesananItems dan buku yang terkait
+
             $pesanan->load('pesananItems.buku');
 
             return view('pesanan.show', compact('pesanan'));
         }
 
-        /**
-         * Menampilkan form konfirmasi checkout (opsional, bisa digabung langsung ke store)
-         * Untuk project ini, kita akan langsung proses dari keranjang.
-         */
-        // public function checkoutForm()
-        // {
-        //     // Logika untuk menampilkan form alamat pengiriman, metode pembayaran, dll.
-        //     // Untuk kesederhanaan, kita akan langsung checkout dari keranjang.
-        // }
 
-        /**
-         * Memproses checkout dari keranjang belanja.
-         */
         public function checkout(Request $request)
         {
             // Pastikan user sudah login
@@ -92,8 +75,8 @@
                     'user_id' => Auth::id(),
                     'total_harga' => $totalHarga,
                     'status' => 'pending', // Status awal pesanan
-                    'alamat_pengiriman' => 'Alamat default user', // TODO: Bisa ditambahkan form untuk input alamat
-                    'metode_pembayaran' => 'Transfer Bank', // TODO: Bisa ditambahkan pilihan metode pembayaran
+                    'alamat_pengiriman' => 'Alamat default user',
+                    'metode_pembayaran' => 'Transfer Bank', 
                 ]);
 
                 // 2. Tambahkan setiap item dari keranjang ke 'pesanan_items' dan kurangi stok buku
@@ -130,4 +113,3 @@
         // Metode untuk admin mengubah status pesanan bisa ditambahkan di sini,
         // atau dibuatkan AdminPesananController terpisah.
     }
-    

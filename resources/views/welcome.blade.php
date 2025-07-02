@@ -278,7 +278,7 @@
                     <h4>Kontak</h4>
                     <p>Email: support@booksphere.com</p>
                     <p>Telp: +62 123 4567 890</p>
-                    <p>Alamat: Jl. smraja. 123, medan, Indonesia</p>
+                    <p>Alamat: Jl. Contoh No. 123, Jakarta, Indonesia</p>
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-6 mt-8">

@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="flex justify-between items-center mb-6">
-        <h1 class="text-4xl font-bold text-gray-800">Manajemen Pengguna</h1>
+        <h1 class="text-4xl font-bold text-gray-800"></h1>
         {{-- Tombol untuk menambah pengguna baru (opsional, akan diimplementasikan nanti jika diperlukan) --}}
         {{-- <a href="{{ route('admin.users.create') }}" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-md">
             + Tambah Pengguna Baru

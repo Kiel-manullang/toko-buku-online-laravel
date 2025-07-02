@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <h1 class="text-4xl font-bold text-gray-800">Manajemen Pesanan</h1>
+        <h1 class="text-4xl font-bold text-gray-800"></h1>
         @if(isset($currentStatusFilter) && $currentStatusFilter)
             <div class="flex items-center space-x-3">
                 <span class="text-lg font-semibold text-gray-700">Menampilkan: <span class="px-3 py-1 rounded-full text-sm font-bold uppercase status-{{ $currentStatusFilter }}">{{ $currentStatusFilter }}</span></span>

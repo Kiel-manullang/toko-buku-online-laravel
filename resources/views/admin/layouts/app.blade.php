@@ -209,6 +209,27 @@
             © {{ date('Y') }} Bookify Admin Panel. Hak Cipta Dilindungi.
         </footer>
     </div>
+    <script>
+        // Tanggal dan Jam Real Time (format Indonesia)
+        document.addEventListener('DOMContentLoaded', function () {
+            const timeElement = document.getElementById('datetimeDisplay');
+
+            function updateDateTime() {
+                const now = new Date();
+                const options = {
+                    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+                    hour: '2-digit', minute: '2-digit', second: '2-digit',
+                    hour12: false,
+                    timeZone: 'Asia/Jakarta'
+                };
+                const formatted = now.toLocaleString('id-ID', options);
+                timeElement.textContent = formatted;
+            }
+
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+        });
+    </script>
 
     <script>
         // JavaScript untuk toggle sidebar di mobile
@@ -259,5 +280,6 @@
         // Initial DOMContentLoaded check (same as load for initial setup)
         document.addEventListener('DOMContentLoaded', handleResize);
     </script>
+
 </body>
 </html>

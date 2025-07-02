@@ -326,13 +326,13 @@ input[type="number"]:focus {
                 <ul class="space-y-2 text-sm text-gray-400">
                     <li>Email: support@booksphere.com</li>
                     <li>Telepon: +62 123 4567 890</li>
-                    <li>Alamat: Jl. smraja. 123, medan, Indonesia</li>
+                    <li>Alamat: Jl. Contoh No. 123, Jakarta, Indonesia</li>
                 </ul>
             </div>
         </div>
         <div class="border-t border-gray-700 pt-6 text-center">
             <p class="text-xs footer-bottom-text">© {{ date('Y') }} BookSphere. Hak Cipta Dilindungi.</p>
-            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh kelompok 5</p>
+            <p class="text-xs mt-1 footer-bottom-text">Desain & Pengembangan oleh Gemini AI.</p>
         </div>
     </div>
 </footer>
